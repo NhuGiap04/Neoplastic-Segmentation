@@ -75,13 +75,9 @@ if __name__ == "__main__":
         return np.uint8(output)
 
 
-    # Set up argument parser
-    parser = argparse.ArgumentParser(description="Get the path of an image file.")
-    parser.add_argument(
-        "image_path",
-        type=str,
-        help="Path to the image file (e.g., image.jpeg)."
-    )
+    parser = argparse.ArgumentParser(description="Process an image.")
+    parser.add_argument('--image_path', type=str, required=True, help='Path to the image file.')
+    args = parser.parse_args()
 
     val_transformation = A.Compose([
         A.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)),
@@ -114,7 +110,6 @@ if __name__ == "__main__":
             return None
 
 
-    args = parser.parse_args()
     img_path = get_image_path(args.image_path)
     print("Image Path:", img_path)
     ori_img = cv2.imread(img_path)
