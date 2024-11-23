@@ -22,7 +22,7 @@ Neoplastic-Segmentation/model.pth
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/Neoplastic-Segmentation.git
+    git clone https://github.com/NhuGiap04/Neoplastic-Segmentation.git
     ```
 
 2. **Navigate into the project directory:**
