@@ -30,6 +30,12 @@ Neoplastic-Segmentation/model.pth
     ```bash
     cd Neoplastic-Segmentation
     ```
+    
+3. **Python Run Example:**
+
+    ```bash
+    python3 infer.py image.jpeg
+    ```    
 
 **Note:** The output image will be in the same directory as the input image.
 
