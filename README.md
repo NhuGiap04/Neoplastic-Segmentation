@@ -30,3 +30,6 @@ Neoplastic-Segmentation/model.pth
     ```bash
     cd Neoplastic-Segmentation
     ```
+
+**Note:** The output image will be in the same directory as the input image.
+
